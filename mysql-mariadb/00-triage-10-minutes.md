@@ -8,9 +8,9 @@ Heure/fuseau, instance, version, impact, changements récents et mesures N1.
 ### 2. Vérifier l'instance (3 min)
 ```sql
 SELECT VERSION() AS version, @@hostname AS hote,
-       @@read_only AS lecture_seule, @@uptime AS uptime_s;
+       @@read_only AS lecture_seule;
 SHOW GLOBAL STATUS WHERE Variable_name IN
-  ('Threads_connected','Threads_running','Aborted_connects');
+  ('Threads_connected','Threads_running','Aborted_connects','Uptime');
 ```
 
 ### 3. Qualifier (3 min)
