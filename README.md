@@ -53,6 +53,21 @@
 
 **Versions visées :** Oracle Database 19c (CDB/PDB ; RAC et Data Guard selon architecture). Pour les autres versions, vérifier la compatibilité des vues et des droits. Les commandes sont en lecture seule. **AWR/ASH/ADDM exigent Diagnostics Pack** : licence à vérifier avant usage.
 
+## MongoDB
+
+| Situation | Fiche |
+|---|---|
+| Incident persistant | [00 — Triage N2 (10 min)](mongodb/00-triage-10-minutes.md) |
+| Operations / pools | [01 — Opérations & connexions](mongodb/01-operations-connexions.md) |
+| Requêtes lentes | [02 — Plans & index](mongodb/02-requetes-index.md) |
+| Secondaire en retard | [03 — Réplication & oplog](mongodb/03-replication-oplog.md) |
+| Disque / cache | [04 — WiredTiger & stockage](mongodb/04-stockage-wiredtiger.md) |
+| Cluster sharded | [05 — Sharding & balancer](mongodb/05-sharding-balancer.md) |
+| Sauvegardes / RPO | [06 — Backups & PITR](mongodb/06-sauvegardes-pitr.md) |
+| Authentification / logs | [07 — Logs & accès](mongodb/07-logs-authentification.md) |
+
+**Versions visées :** MongoDB 7.0 et 8.x. Environnements self-managed et Atlas : disponibilité des commandes et privilèges variables selon l'offre. **Diagnostics en lecture seule** ; toute correction exige autorisation et validation.
+
 **Statut :** fiches documentaires, non exécutées sur une instance réelle.
 
-Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/)
+Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/) · [MongoDB](https://www.mongodb.com/docs/manual/)
