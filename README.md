@@ -38,6 +38,21 @@
 
 **Données sensibles :** ne pas publier le texte des requêtes métier, noms internes ou sorties brutes.
 
+## Oracle
+
+| Situation | Fiche |
+|---|---|
+| Incident persistant | [00 — Triage N2 (10 min)](oracle/00-triage-10-minutes.md) |
+| Verrous et timeouts | [01 — Sessions & verrous](oracle/01-sessions-verrous.md) |
+| SQL lent / charge | [02 — Performance SQL](oracle/02-performance-sql.md) |
+| Espace, ORA-01653, FRA | [03 — Tablespaces & FRA](oracle/03-tablespaces-fra.md) |
+| ORA-01555 / undo | [04 — Undo](oracle/04-undo.md) |
+| Backup / archivelog | [05 — RMAN & archivage](oracle/05-rman-archivage.md) |
+| Retard de standby | [06 — Data Guard](oracle/06-data-guard.md) |
+| PDB indisponible | [07 — CDB / PDB](oracle/07-cdb-pdb.md) |
+
+**Versions visées :** Oracle Database 19c (CDB/PDB ; RAC et Data Guard selon architecture). Pour les autres versions, vérifier la compatibilité des vues et des droits. Les commandes sont en lecture seule. **AWR/ASH/ADDM exigent Diagnostics Pack** : licence à vérifier avant usage.
+
 **Statut :** fiches documentaires, non exécutées sur une instance réelle.
 
-Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [Versions supportées](https://www.postgresql.org/support/versioning/)
+Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/)
