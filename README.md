@@ -68,6 +68,21 @@
 
 **Versions visées :** MongoDB 7.0 et 8.x. Environnements self-managed et Atlas : disponibilité des commandes et privilèges variables selon l'offre. **Diagnostics en lecture seule** ; toute correction exige autorisation et validation.
 
+## MySQL / MariaDB
+
+| Situation | Fiche |
+|---|---|
+| Incident N1 non résolu | [00 — Triage N2 (10 min)](mysql-mariadb/00-triage-10-minutes.md) |
+| Blocages / transactions | [01 — Verrous](mysql-mariadb/01-verrous-transactions.md) |
+| Requêtes lentes | [02 — Performance SQL](mysql-mariadb/02-performance-sql.md) |
+| Cache / I/O | [03 — InnoDB](mysql-mariadb/03-innodb-io.md) |
+| Disque / temporaires | [04 — Capacité](mysql-mariadb/04-capacite-temporaires.md) |
+| Réplication / GTID | [05 — Réplication](mysql-mariadb/05-replication.md) |
+| Sauvegardes / RPO | [06 — Backups & binlogs](mysql-mariadb/06-backups-binlogs.md) |
+| Connexions / erreurs | [07 — Connexions](mysql-mariadb/07-connexions-erreurs.md) |
+
+**Versions visées :** MySQL 8.0/8.4 et MariaDB 10.11/11.x, avec commandes distinctes lorsque nécessaire. **Diagnostics en lecture seule** ; toute correction exige validation, autorisation et contrôle après intervention.
+
 **Statut :** fiches documentaires, non exécutées sur une instance réelle.
 
-Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/) · [MongoDB](https://www.mongodb.com/docs/manual/)
+Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/) · [MongoDB](https://www.mongodb.com/docs/manual/) · [MySQL](https://dev.mysql.com/doc/refman/8.4/en/) · [MariaDB](https://mariadb.com/docs/server/)
