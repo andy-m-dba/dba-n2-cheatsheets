@@ -83,6 +83,21 @@
 
 **Versions visées :** MySQL 8.0/8.4 et MariaDB 10.11/11.x, avec commandes distinctes lorsque nécessaire. **Diagnostics en lecture seule** ; toute correction exige validation, autorisation et contrôle après intervention.
 
+## Redis
+
+| Situation | Fiche |
+|---|---|
+| Incident N1 non résolu | [00 — Triage N2 (10 min)](redis/00-triage-10-minutes.md) |
+| OOM / évictions | [01 — Mémoire](redis/01-memoire-evictions.md) |
+| Latence élevée | [02 — Latence & commandes](redis/02-latence-commandes.md) |
+| Clients saturés | [03 — Connexions & buffers](redis/03-connexions-clients.md) |
+| Replica / cluster | [04 — Réplication & cluster](redis/04-replication-cluster.md) |
+| RDB / AOF | [05 — Persistance & backups](redis/05-persistance-backups.md) |
+| Accès refusés | [06 — ACL & authentification](redis/06-acl-authentification.md) |
+| Cache & TTL | [07 — Keyspace & expirations](redis/07-keyspace-expiration.md) |
+
+**Versions visées :** Redis Open Source 7.x–8.x ; commandes, ACL et métriques à adapter aux offres managées. Les commandes de diagnostic sont en lecture seule ; toute correction exige autorisation, contrôle et plan de retour.
+
 **Statut :** fiches documentaires, non exécutées sur une instance réelle.
 
-Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/) · [MongoDB](https://www.mongodb.com/docs/manual/) · [MySQL](https://dev.mysql.com/doc/refman/8.4/en/) · [MariaDB](https://mariadb.com/docs/server/)
+Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/) · [MongoDB](https://www.mongodb.com/docs/manual/) · [MySQL](https://dev.mysql.com/doc/refman/8.4/en/) · [MariaDB](https://mariadb.com/docs/server/) · [Redis](https://redis.io/docs/latest/)
