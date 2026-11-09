@@ -98,6 +98,21 @@
 
 **Versions visées :** Redis Open Source 7.x–8.x ; commandes, ACL et métriques à adapter aux offres managées. Les commandes de diagnostic sont en lecture seule ; toute correction exige autorisation, contrôle et plan de retour.
 
+## Cassandra
+
+| Situation | Fiche |
+|---|---|
+| Incident N1 non résolu | [00 — Triage N2 (10 min)](cassandra/00-triage-10-minutes.md) |
+| Nœuds / gossip | [01 — Cluster & schéma](cassandra/01-cluster-gossip.md) |
+| Timeouts CQL | [02 — Latence & thread pools](cassandra/02-latence-threadpools.md) |
+| Disque / SSTables | [03 — Stockage & tables](cassandra/03-stockage-tables.md) |
+| Compactions / tombstones | [04 — Compactions](cassandra/04-compactions-tombstones.md) |
+| Repair / incohérence | [05 — Cohérence & streaming](cassandra/05-repair-streaming.md) |
+| Backups / RPO | [06 — Sauvegardes & snapshots](cassandra/06-sauvegardes-snapshots.md) |
+| Connexions / logs | [07 — Clients CQL](cassandra/07-clients-cql-logs.md) |
+
+**Versions visées :** Apache Cassandra 4.1/5.0. `nodetool` nécessite JMX autorisé, distinct de CQL. Diagnostics non destructifs ; corrections et opérations coûteuses uniquement sous procédure validée.
+
 **Statut :** fiches documentaires, non exécutées sur une instance réelle.
 
-Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/) · [MongoDB](https://www.mongodb.com/docs/manual/) · [MySQL](https://dev.mysql.com/doc/refman/8.4/en/) · [MariaDB](https://mariadb.com/docs/server/) · [Redis](https://redis.io/docs/latest/)
+Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/) · [MongoDB](https://www.mongodb.com/docs/manual/) · [MySQL](https://dev.mysql.com/doc/refman/8.4/en/) · [MariaDB](https://mariadb.com/docs/server/) · [Redis](https://redis.io/docs/latest/) · [Cassandra](https://cassandra.apache.org/doc/latest/)
