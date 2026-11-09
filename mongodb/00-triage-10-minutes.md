@@ -8,14 +8,14 @@ Heure/fuseau, application, cluster et nœud, topologie attendue, impact, dernier
 ### 2. Vérifier la cible (2 min, mongosh autorisé)
 ```javascript
 db.adminCommand({ ping: 1 })
-const h = db.adminCommand({ hello: 1 })
+const h = db.adminCommand({ hello: 1 });
 ({ replicaSet: h.setName, primaire: h.isWritablePrimary,
    secondaire: h.secondary, mongos: h.msg === "isdbgrid" })
 ```
 
 ### 3. Identifier la charge (3 min, avec droits de supervision)
 ```javascript
-const s = db.serverStatus()
+const s = db.serverStatus();
 ({ connexions: s.connections, files: s.globalLock?.currentQueue })
 ```
 Compteurs dépendants du nœud et de la version ; un `ping` réussi ne prouve pas la disponibilité applicative.

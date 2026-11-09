@@ -11,7 +11,7 @@ db.getSiblingDB("DATABASE").runCommand({
 
 ### Cache du nœud WiredTiger, si accessible
 ```javascript
-const c = db.serverStatus().wiredTiger?.cache
+const c = db.serverStatus().wiredTiger?.cache;
 ({ utilise: c?.["bytes currently in the cache"],
    maximum: c?.["maximum bytes configured"] })
 ```

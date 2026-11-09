@@ -4,7 +4,7 @@
 
 ### Connexions au nœud
 ```javascript
-const c = db.serverStatus().connections
+const c = db.serverStatus().connections;
 ({ actuelles: c.current, actives: c.active,
    disponibles: c.available, creees: c.totalCreated })
 ```
