@@ -12,7 +12,7 @@ FROM pg_stat_replication;
 
 ### Sur le standby
 ```sql
-SELECT status, received_lsn, latest_end_lsn,
+SELECT status, flushed_lsn, latest_end_lsn,
        last_msg_receipt_time FROM pg_stat_wal_receiver;
 SELECT pg_last_wal_receive_lsn(), pg_last_wal_replay_lsn(),
        pg_is_wal_replay_paused();
