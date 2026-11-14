@@ -11,6 +11,8 @@ ORDER BY query_start NULLS LAST LIMIT 15;
 ```
 
 ### Si pg_stat_statements est déjà installé
+
+Le rôle de diagnostic doit avoir le droit `USAGE` sur le schéma de l’extension. Si ce schéma est absent du `search_path`, qualifier la vue, par exemple `extensions.pg_stat_statements` lorsque l’extension est installée dans `extensions`.
 ```sql
 SELECT queryid, calls, round(total_exec_time::numeric,1) AS total_ms,
        round(mean_exec_time::numeric,1) AS moyenne_ms
