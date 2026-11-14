@@ -17,7 +17,9 @@
 | Échec des backups / archivage | [06 — Sauvegardes & archivage](postgresql/06-sauvegardes-archivage.md) |
 | Connexions et ressources | [07 — Connexions & ressources](postgresql/07-connexions-ressources.md) |
 
-**Versions visées :** PostgreSQL 14–18. PostgreSQL 14 arrive en fin de support le **12/11/2026**. Vérifier versions, architecture, droits et procédures d'exploitation avant intervention.
+**Versions visées :** PostgreSQL 14–18. PostgreSQL 14 est en fin de support depuis le 12 novembre 2026. Adapter les commandes et les droits à la version exploitée.
+
+**Validation PostgreSQL :** 8/8 TP réussis sur PostgreSQL 17.12 en laboratoire Docker, le 14 novembre 2026. Les résultats couvrent les scénarios exécutés sur cette version.
 
 **Utilisation :** toutes les commandes de diagnostic sont en lecture seule. Les actions correctives éventuelles nécessitent validation du périmètre, autorisation et analyse d'impact. Ne jamais publier de secrets, logs bruts ou données métier.
 
@@ -113,6 +115,6 @@
 
 **Versions visées :** Apache Cassandra 4.1/5.0. `nodetool` nécessite JMX autorisé, distinct de CQL. Diagnostics non destructifs ; corrections et opérations coûteuses uniquement sous procédure validée.
 
-**Statut :** fiches documentaires, non exécutées sur une instance réelle.
+**Statut des autres SGBD :** fiches documentaires, non exécutées sur une instance réelle.
 
 Documentation : [PostgreSQL](https://www.postgresql.org/docs/current/) · [SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/) · [Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/) · [MongoDB](https://www.mongodb.com/docs/manual/) · [MySQL](https://dev.mysql.com/doc/refman/8.4/en/) · [MariaDB](https://mariadb.com/docs/server/) · [Redis](https://redis.io/docs/latest/) · [Cassandra](https://cassandra.apache.org/doc/latest/)
